@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin: 0;
+}
+.image{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 30px;
+    font-family: VT323;
+    color: #000000;
+    position: absolute;
+    padding: 10px;
+}
+.image::after{
+    content: "ServiceFinder";
+    font-size:35px;
+    margin-left: 10px;
+}
+.form{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.container{
+    background-image: url("../img/loginwall.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+}
+.fields .error{
+    background-color: red;
+    color: white;
+    padding: 5px;
+    display: none;
+}
+.form form{
+    position: relative;
+    height: 60vh;
+    width: 50vw;
+    background:linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5));
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+}
+.fields{
+    height: 25vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+
+}
+.left img{
+    height: 100%;
+    width: 120%;
+    filter: drop-shadow(2px 1px 4px black);
+}
+.right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 50% ;
+}
+.header{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.header img{
+    border-radius: 50%;
+    border: 3px solid #ffffff4f;
+
+}
+.fields label{
+    display: block;
+    color: white;
+
+}
+.fields input{
+    padding: 5px;
+    width: 15vw;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid white;
+    margin: 5px;
+    color: aliceblue;
+    position: relative;
+    padding-left:40px;
+}
+.uname{
+    background: url("../img/username.png") no-repeat;
+    background-size: 20px 20px;
+}
+.pass{
+    background: url("../img/password.png") no-repeat;
+    background-size: 20px 20px;
+}
+.fields input::placeholder{
+    color: rgba(240, 248, 255, 0.612);
+}
+.form button{
+    height: 35px;
+    width: 10vw;
+    margin-top: 10px;
+    background-color: #34bbbb;
+    border-radius: 10px;
+}
